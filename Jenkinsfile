@@ -5,7 +5,7 @@ pipeline {
     }
     stage('git clone') {
             steps {
-                git 'mvm '
+                git 'mvm https://github.com/Bhavana739/developer.git'
             }
         }
         stage('compile') {
