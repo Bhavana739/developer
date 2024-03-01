@@ -3,6 +3,11 @@ pipeline {
     tools {
         maven 'maven'
     }
+    stage('git clone') {
+            steps {
+                git 'mvm '
+            }
+        }
         stage('compile') {
             steps {
                 echo 'mvm complie'
